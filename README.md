@@ -71,7 +71,7 @@ A modern real estate platform where users can sign up, log in, and browse filter
 
 ## 📸 Screenshots
 
-
+![Image](https://github.com/user-attachments/assets/6c5285bb-a9ba-4f4b-94a1-697d51aa9b86)
 
 ---
 
