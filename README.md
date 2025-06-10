@@ -41,7 +41,6 @@ A modern real estate platform where users can sign up, log in, and browse filter
 ├── /assets/           # Images & styles
 └── README.md
 
-````
 
 ---
 
@@ -71,7 +70,7 @@ A modern real estate platform where users can sign up, log in, and browse filter
 
 ## 📸 Screenshots
 
-![Image](https://github.com/user-attachments/assets/6c5285bb-a9ba-4f4b-94a1-697d51aa9b86)
+![Image](https://github.com/user-attachments/assets/35f84de9-9582-4213-a97d-a02d343dea08)
 
 ---
 
