@@ -1,112 +1,97 @@
-Got it! Here's your updated **`README.md`** with credit to **Roshini Parida**:
+# 🏡 99prop – Real Estate Web App
+
+Welcome to **99prop** — a simple, modern web app for browsing real estate listings. Users can sign up, log in, and explore properties based on location and price. It’s built using **HTML**, **Tailwind CSS**, **JavaScript**, and **Firebase** for backend services.
 
 ---
 
-```markdown
-# 🏡 99prop – Real Estate Web Application
+##  What It Can Do
 
-A modern real estate platform where users can sign up, log in, and browse filtered property listings — built with **HTML**, **Tailwind CSS**, **JavaScript**, and **Firebase** (Authentication + Realtime Database).
-
----
-
-## 🚀 Features
-
-- 🔐 **User Authentication** with Firebase (Signup/Login)
-- 📦 **Store & Retrieve Property Listings** from Firebase Realtime Database
-- 🔍 **Client-Side Filtering** based on location and price
-- 💻 **Responsive UI** using Tailwind CSS
-- ⚡ **Live Updates** for listings via Firebase listeners
+-  User authentication (sign up & log in) with Firebase  
+-  Save and fetch property listings from Firebase Realtime Database  
+-  Filter listings by location and price on the frontend  
+-  Clean, responsive UI built with Tailwind CSS  
+-  Real-time updates when listings are added or changed  
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Used
 
-| Frontend                       | Backend / DB                  |
-|--------------------------------|-------------------------------|
-| HTML, Tailwind CSS, JavaScript | Firebase Realtime Database    |
-| Firebase Authentication        | 
+| Frontend                        | Backend / Database           |
+|--------------------------------|------------------------------|
+| HTML, Tailwind CSS, JavaScript | Firebase Realtime Database   |
+|                                | Firebase Authentication      |
 
 ---
 
-## 🔧 Project Structure
+##  Folder Structure
 
 ```
 
 📁 99prop/
 ├── index.html         # Homepage
-├── login.html         # User login form
-├── signup.html        # User signup form
-├── buy.html           # Property listings page
-├── script.js          # Firebase & JS logic
-├── /assets/           # Images & styles
+├── login.html         # Login screen
+├── signup.html        # Signup screen
+├── buy.html           # Page to view listings
+├── script.js          # All JS logic + Firebase setup
+├── /assets/           # Images, styles, etc.
 └── README.md
 
-
----
-
-## 🧠 How It Works
-
-### 🔐 Firebase Authentication
-- Users can **sign up** and **log in** using email and password.
-- Session is handled via `firebase.auth().onAuthStateChanged`.
-
-### 🏘️ Property Listings
-- Stored in Firebase Realtime Database under `properties/`
-- Each listing includes title, price, location, type, and image URL.
-
-### 📥 Real-Time Display
-- Properties are dynamically fetched using:
-  ```js
-  firebase.database().ref("properties").on("value", ...)
 ````
 
-* Displayed as Tailwind-styled cards.
-
-### 🔍 Filtering
-
-* Client-side filtering by location and price using JavaScript.
-
 ---
 
-## 📸 Screenshots
+##  How It Works
 
-![Image](https://github.com/user-attachments/assets/35f84de9-9582-4213-a97d-a02d343dea08)
+###  Auth
+Users can create an account or log in using their email and password. Firebase handles session management behind the scenes.
 
----
+###  Listings
+Properties are stored in Firebase under a `properties/` node, with details like title, price, location, type, and image URL.
 
-## 📦 Firebase Config Snippet
-
+###  Real-Time Updates
+New listings are displayed instantly using:
 ```js
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "your-app.firebaseapp.com",
-  databaseURL: "https://your-app.firebaseio.com",
-  projectId: "your-app-id",
-  // ...
-};
-firebase.initializeApp(firebaseConfig);
-```
+firebase.database().ref("properties").on("value", ...)
+````
+
+They’re shown as cards styled with Tailwind.
+
+###  Filters
+
+Filtering is done entirely on the client side — users can narrow listings by location or price using basic JavaScript.
 
 ---
 
-## 💡 Future Enhancements
+##  Screenshot
 
-* 🔄 Switch to Firestore for advanced queries
-* 📸 Add image uploads via Firebase Storage
-* 🌐 Deploy using Firebase Hosting
-* 🧾 Add user-specific listing management
+![Screenshot](https://github.com/user-attachments/assets/6c5285bb-a9ba-4f4b-94a1-697d51aa9b86)
 
 ---
 
-## 📜 License
 
-This project is open-source and free to use under the MIT License.
+##  What’s Next
+
+Here are a few features I’d love to add in the future:
+
+* Switch to **Firestore** for better querying
+* Add **image uploads** with Firebase Storage
+* Deploy the app via **Firebase Hosting**
+* Let users **post and manage** their own listings
 
 ---
 
-## 🙋‍♀️ Made by
+##  License
 
-**Roshini Parida**
-Built with ❤️ using Firebase and Tailwind CSS
+Open-source under the MIT License. Feel free to fork, clone, or build on top of it.
 
 ---
+
+##  About Me
+
+Created by **Roshini Parida**
+Just building things and learning along the way 💻
+
+
+---
+
+
